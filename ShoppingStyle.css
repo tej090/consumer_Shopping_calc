@@ -1,0 +1,171 @@
+body{
+    background: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Card */
+
+.card{
+    border-radius:20px;
+    border:none;
+}
+
+/* Heading */
+
+h2{
+    font-weight:bold;
+}
+
+/* Tabs */
+
+.nav-tabs .nav-link{
+    font-weight:bold;
+}
+
+/* Table Header */
+
+thead{
+    background:#0d6efd;
+    color:white;
+}
+
+/* Inputs */
+
+input{
+    text-align:center;
+}
+
+/* Totals */
+
+.total-box{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Table */
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+/* Product Name Wrap */
+
+.product{
+    white-space:normal;
+    word-break:break-word;
+}
+
+/* Row Total Wrap */
+
+.rowTotal{
+    word-break:break-word;
+}
+
+/* Grand Total Wrap */
+
+#grandTotal,
+#finalAmount{
+    word-break:break-word;
+}
+
+/* Small Delete Button */
+
+.removeRow{
+    padding:4px 8px;
+}
+
+/* Table Responsive */
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+/* Textarea */
+
+textarea{
+    resize:none;
+}
+
+/* Labels */
+
+label{
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+/* Mobile Optimizations */
+
+@media(max-width:768px){
+
+    body{
+        font-size:14px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    input{
+        font-size:13px !important;
+    }
+
+    textarea{
+        font-size:13px !important;
+    }
+
+    .btn{
+        font-size:12px;
+    }
+
+    .removeRow{
+        padding:2px 6px;
+    }
+
+    .total-box{
+        font-size:15px;
+    }
+
+    /* Column widths */
+
+    #billTable th:nth-child(1){
+        width:40%;
+    }
+
+    #billTable th:nth-child(2){
+        width:12%;
+    }
+
+    #billTable th:nth-child(3){
+        width:18%;
+    }
+
+    #billTable th:nth-child(4){
+        width:20%;
+    }
+
+    #billTable th:nth-child(5){
+        width:10%;
+    }
+
+}
+
+/* Print */
+
+@media print{
+
+    body{
+        background:white;
+    }
+
+    .nav-tabs,
+    #addRow,
+    .btn{
+        display:none;
+    }
+
+}
